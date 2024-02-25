@@ -1,0 +1,176 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yote Shin Time</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b8295a624c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- draggable -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="app.js"></script>
+
+    <!-- Vue 3 -->
+    <!-- <script src='https://unpkg.com/vue@next'></script> -->
+    <script src='https://unpkg.com/vue@3.2.1'></script>
+
+    <!-- AddToAny buttons -->
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>    
+    <!-- <script type="module" src ="main.js"> </script> -->
+
+    <!-- tele discussion -->
+    <link rel="canonical" href="https://main.d232dzanupa38j.amplifyapp.com/#">
+  </head>
+
+  <body>
+    <div id="main">
+      <mypage 
+        :data="this.data"
+        v-on:searching="getMovies"
+        v-on:empty="display"
+        >
+        </mypage>
+    </div>
+
+    <!-- left sidebar (login, preference)  -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 p-0">
+          <div class="navL nav-black">
+            <div class="navL nav-red">
+              <div class="navL nav-white">
+                <button class="nav-btnL close-btn" id="close_btnL">
+                  <i class="fas fa-times"></i>
+                </button>
+
+                <ul class="list">
+                  <li><script async src="https://telegram.org/js/telegram-widget.js?21" data-telegram-login="TeleNFMovieBot" data-size="small" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+                    <script type="text/javascript">
+                      function onTelegramAuth(user) {
+                        alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+                      }
+                    </script></li>
+              
+                </ul>
+                <script async src="https://telegram.org/js/telegram-widget.js?21" data-telegram-post="yoteshintele/4" data-width="auto" data-color="E22F38" data-dark-color="F95C54"></script>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- col -->
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+
+    <!-- right sidebar (login, preference)  -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 p-0">
+          <div class="navR nav-blackR">
+            <div class="navR nav-red">
+              <div class="navR nav-white">
+                <button class="nav-btnR close-btn" id="close_btnR">
+                  <i class="fas fa-times"></i>
+                </button>
+                <div class="grp">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <!-- draggable  -->
+                  <div id="wrapPls">
+                    <table id="playlist" class="table table-hover" cellspacing="0">
+                      <thead>
+                        <tr>
+                          <th colspan=2>My Playlist</th>
+                        </tr>
+                      </thead>
+                        <tbody id="tbody">
+                          <!-- <tr class="nothing"><td colspan=2>nothing</td></tr> -->
+                        </tbody>
+                    </table>
+                  </div>
+                  <!-- draggable -->
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="row">
+                      <div class="col">
+                        <div class="my-3">
+                          <label class="form-label">Presets</label>
+                          <select class='form-select' aria-label='Default select example' id='' onchange="templateMsg(this.selectedIndex);" onfocus="this.selectedIndex = -1;">
+                              <option value='1'>One</option>
+                              <option value='2'>Two</option>
+                              <option value='3'>Three</option>
+                          </select>
+                          <label class="form-label mt-2" for="message">Message</label>
+                              
+                          
+                        
+                          <textarea class="form-control" id="message" rows="10" >PICK ONE OF THE 3 TEMPLATE OPTIONS!!</textarea>
+                          
+                          </div>
+                          Send Playlist
+                  
+                          <!-- AddToAny BEGIN -->
+                            <div
+                            class="a2a_kit a2a_kit_size_32 a2a_default_style"
+                            data-a2a-url="http://www.youtube.com"
+                            data-a2a-title="MOVIE PLAYLIST WOO" 
+                          >
+                            <!-- <a class="a2a_dd" href="https://www.addtoany.com/share"></a> -->
+                            <a class="a2a_button_telegram"></a>
+                            <a class="a2a_button_whatsapp"></a>
+                          </div>
+                          <script async src="https://static.addtoany.com/menu/page.js"></script>
+                          <!-- AddToAny END -->
+                          
+                      </div>
+                  </div><!-- [Bottom] end-row -->
+                  
+                </div><!-- end of container-->
+                
+
+              </div>
+            </div>
+          </div> 
+        </div>
+        <!-- col -->
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+    
+
+
+    <!-- <div id="draggable" class="ui-widget-content" style="background-color: white">
+      <p>Drag me around</p>
+    </div> -->
+
+    <script src="script.js"></script>
+    <!-- Bootstrap Javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
