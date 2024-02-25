@@ -5,11 +5,11 @@ Sometimes, we just want to have an easy and quick fix to our movie itch. And whe
 Clone this repository and run `index.html`
 
 # Features
-[![Homepage](./screenshots/homepage.png)]
+- ![Homepage](./screenshots/homepage.png)
 - Use the search bar to search for your favourite movies
 - Hover cursor over movies to view their synopsis
 - Double click movie titles in the homepage to add them to your playlist
-[![Playlist](./screenshots/playlist.png)]
+![Playlist](./screenshots/playlist.png)
 - Click and drag movie titles in your playlist to reorder them. Double click to remove them from playlist.
 - Customise your message and send them on Whatsapp or Telegram
 
